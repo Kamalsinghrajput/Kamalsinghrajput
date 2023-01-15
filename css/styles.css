@@ -1,0 +1,252 @@
+/* body {
+  text-align: center;
+  font-family: "kalam";
+  background-color: #97dece;
+  overflow-x: hidden;
+  width: 100vw;
+  margin: auto;
+} */
+
+html {
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  text-align: center;
+  font-family: "kalam";
+  background-color: #97dece;
+}
+
+.navbar {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 12px;
+  font-size: 1rem;
+}
+
+.nav-options a:not(:last-child) {
+  padding-right: 8px;
+  border-right: 2px solid white;
+}
+
+.navbar a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar a:hover:not(.active) {
+  background-color: #cff5e7;
+}
+
+h1 {
+  color: #66bfbf;
+  font-family: "Dancing Script", cursive;
+  font-size: 5.625rem;
+  margin: 50px auto 0 auto;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #66bfbf;
+  font-weight: normal;
+}
+
+h3 {
+  color: #11999e;
+}
+
+.footer-link {
+  color: #11999e;
+  margin-top: 10px;
+}
+
+.btn {
+  color: #11999e;
+}
+
+.top-container {
+  position: relative;
+  background-color: #e1ffee;
+  padding-top: 50px;
+}
+
+.bottom-container {
+  background-color: #66bfbf;
+  padding: 10px 0 20px 0;
+}
+
+.bottom-cloud {
+  position: relative;
+  left: 500px;
+  bottom: 300px;
+}
+
+.top-cloud {
+  position: relative;
+  left: 200px;
+}
+
+span {
+  text-decoration: underline;
+}
+
+.profile-picture {
+  height: 200px;
+  width: 200px;
+  margin-top: 15px;
+}
+
+.first-proj {
+  height: 25%;
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.second-proj {
+  height: 25%;
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.skill-row {
+  width: 50%;
+  margin: auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.text {
+  padding-inline: 50px;
+}
+
+hr {
+  width: 5%;
+
+  border-style: none;
+  border-top: dotted;
+  border-width: 10px;
+  border-color: black;
+}
+
+.contact-me {
+  margin-bottom: 40px;
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+.copy-right {
+  color: #eaf6f6;
+}
+
+.toggle-btn {
+  display: none;
+}
+
+@media (max-width: 55em) {
+  .navbar {
+    flex-direction: column;
+    position: absolute;
+    right: 1rem;
+    top: 3rem;
+    transform: translateX(120%);
+    z-index: 100;
+    transition: transform 350ms ease-out;
+  }
+
+  .nav-options {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .nav-options a:not(:last-child) {
+    border-right: none;
+  }
+
+  .toggle-btn {
+    display: block;
+    position: absolute;
+    right: 1.8rem;
+    width: 2rem;
+    height: 2rem;
+    top: 1rem;
+    z-index: 999;
+    background-image: url(/images/menu.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+  }
+  .navbar[data-visible="true"] {
+    transform: translateX(0);
+  }
+
+  .toggle-btn[aria-expanded="true"] {
+    background-image: url(/images/close.png);
+  }
+
+  .top-cloud {
+    position: static;
+  }
+
+  .bottom-cloud {
+    position: static;
+  }
+
+  .mountains {
+    width: 100vw;
+  }
+
+  .first-proj {
+    height: 100px;
+    width: 100px;
+  }
+
+  .second-proj {
+    height: 100px;
+    width: 100px;
+  }
+
+  hr {
+    width: 15%;
+  }
+
+  .text {
+    padding-inline: 30px;
+  }
+}
