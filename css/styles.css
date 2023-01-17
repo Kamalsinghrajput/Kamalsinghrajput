@@ -216,8 +216,8 @@ hr {
     transform: translateX(0);
   }
 
-  .toggle-btn[aria-expanded="true"] {
-    background-image: url(/images/close.png);
+   .toggle-btn[aria-expanded="true"] {
+    background-image: url(https://github.com/Kamalsinghrajput/Kamalsinghrajput/blob/master/images/close.png?raw=true);
   }
 
   .top-cloud {
