@@ -249,4 +249,10 @@ hr {
   .text {
     padding-inline: 30px;
   }
+  
+  .nav-options a:not(:last-child) {
+  padding-right: 0px;
+ 
+}
+  
 }
