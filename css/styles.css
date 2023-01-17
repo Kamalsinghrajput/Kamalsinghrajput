@@ -207,7 +207,7 @@ hr {
     height: 2rem;
     top: 1rem;
     z-index: 999;
-    background-image: url(/images/menu.png);
+   background-image: url(https://raw.githubusercontent.com/Kamalsinghrajput/Kamalsinghrajput/master/images/menu.png);
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
